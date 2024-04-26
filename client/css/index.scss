@@ -1,0 +1,50 @@
+$default-font-color: #000;
+$background-color: rgb(114, 114, 238);
+$container-bgcolor: #fdfffd;
+$container-bordercolor: rgb(3, 3, 3);
+$textbox-bordercolor: lightgray;
+$button-textcolor:#fff;
+$button-hovercolor: #000;
+$add-button-color: rgb(28, 180, 28);
+$clear-button-color: rgb(184, 31, 31);
+
+
+@mixin mq($size) {
+    @media only screen and (min-width: $size){
+        @content;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html, body {
+    font-size: 16px;
+    color: $default-font-color;
+    min-width: 100%;
+    min-height: 100%;
+    //@include mq(1000px) {
+    //@include mq(700px) {
+        font-size: 16px;
+    //}
+}
+
+body{
+    padding: 10px;
+    background-color: $background-color;
+}
+
+/*section {
+    background-color: $container-bgcolor;
+    width: 80%;
+    //max-width: 340px;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid $container-bordercolor;
+    border-radius: 5px;
+}*/

@@ -1,0 +1,21 @@
+{
+  "name": "charlotte_game",
+  "version": "0.1.1",
+  "description": "A simple battleship made with node.js",
+  "main": "index.js",
+  "author": "EB",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "serve": "serve ./client",
+    "lint": "eslint ./client"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "serve": "^9.3.0"
+  }
+}
